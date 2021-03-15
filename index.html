@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
 
     <title>Thüringer Wald</title>
 
@@ -13,13 +13,16 @@
             padding: 0px 5% 0px 5%;
         }
 
-        h1{
-            text-align:center;
-            font-size:60px;
+        #title {
+            font-size: 60px;
+            background-color: darkslategray;
+            font-family: Arial, Helvetica, sans-serif;
+            color: floralwhite;
+        
         }
 
         h2 a {
-            text-align:center;
+            text-align: center;
             width: 100%;
             display: inline-block;
             padding: 25px 0px 25px 0px;
@@ -27,27 +30,41 @@
         }
 
         #beschreibung {
-            padding:0px 0px 0px 25%;
+            padding: 0px 0px 0px 25%;
+        }
+        #image img{
+            width:100%;
+            display:inline-block;
+        }
+        #aaa{
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-<main>
-    <h1>Thüringer Wald</h1>
+    <main>
+        <div id="aaa"><h1 id="title">Thüringer Wald</h1>
+        </div>
+        
+        <div id="image">
+            <img src="./images/IMG_4933.jpg">
+        </div>
 
-    <aside>
-        <h2>
-            <a href="./pages/pilz.html">Pilz</a>
-            <a href="./pages/bergbau.html">Bergbau</a>
-            <a href="./pages/berg.html">Berg</a>
-            <a href="./pages/kristall.html">Kristall</a>
-            <a href="./pages/wald.html">Wald</a>
-        </h2>
-    </aside>
-    <article id="beschreibung">
-        <h2>Beschreibung vom Wald</h2>
-    </article>
-</main>
+        <aside>
+            <h2>
+                <a href="./pages/pilz.html">Pilz</a>
+                <a href="./pages/bergbau.html">Bergbau</a>
+                <a href="./pages/berg.html">Berg</a>
+                <a href="./pages/kristall.html">Kristall</a>
+                <a href="./pages/wald.html">Wald</a>
+            </h2>
+        </aside>
+        <article id="beschreibung">
+            <h2>Beschreibung vom Wald</h2>
+        </article>
+        
+    </main>
 </body>
+
 </html>
