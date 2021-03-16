@@ -1,0 +1,42 @@
+aside {
+    width: 15%;
+    float: left;
+    padding: 0px 5% 0px 5%;
+}
+
+header, footer {
+    font-size: 60px;
+    background-color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: floralwhite;
+    text-align: center;
+    margin: 25px 0px 10px 0px;
+    padding: 5px;
+}
+
+header a {
+    color: floralwhite;
+    text-decoration: none;
+}
+
+#toc a {
+    text-align: center;
+    width: 100%;
+    padding: 25px 25px 25px 25px;
+    color: rgb(81, 81, 81);
+    border: 2px solid #e5e5e5;
+    font-weight: 100;
+}
+
+#toc {
+    padding-top: 10px;
+}
+
+#beschreibung {
+    padding: 0px 0px 0px 25%;
+}
+
+#image img {
+    width: 100%;
+    display: inline-block;
+}

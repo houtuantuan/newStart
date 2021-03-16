@@ -6,64 +6,69 @@
 
     <title>Thüringer Wald</title>
 
-    <style>
-        aside {
-            width: 15%;
-            float: left;
-            padding: 0px 5% 0px 5%;
-        }
+    <link href="./style/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css" rel="stylesheet">
 
-        #title {
-            font-size: 60px;
-            background-color: darkslategray;
-            font-family: Arial, Helvetica, sans-serif;
-            color: floralwhite;
-        
-        }
+    <link href="./style/style.css" rel="stylesheet">
 
-        h2 a {
-            text-align: center;
-            width: 100%;
-            display: inline-block;
-            padding: 25px 0px 25px 0px;
-            border: 2px solid #e5e5e5;
-        }
-
-        #beschreibung {
-            padding: 0px 0px 0px 25%;
-        }
-        #image img{
-            width:100%;
-            display:inline-block;
-        }
-        #aaa{
-            text-align: center;
-        }
-    </style>
+    <script src="./style/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <main>
-        <div id="aaa"><h1 id="title">Thüringer Wald</h1>
-        </div>
-        
-        <div id="image">
-            <img src="./images/IMG_4933.jpg">
+    <main class="container">
+        <header>
+            <h1>
+                <a href="#">Thüringer Wald</a>
+            </h1>
+        </header>
+
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 350px;">
+                <div class="carousel-item active">
+                    <img src="./images/IMG_4841.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/IMG_4938.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/IMG_4943.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-        <aside>
-            <h2>
-                <a href="./pages/pilz.html">Pilz</a>
-                <a href="./pages/bergbau.html">Bergbau</a>
-                <a href="./pages/berg.html">Berg</a>
-                <a href="./pages/kristall.html">Kristall</a>
-                <a href="./pages/wald.html">Wald</a>
-            </h2>
-        </aside>
-        <article id="beschreibung">
+        <div id="toc">
+            <ul class="nav nav-fill">
+                <li class="nav-item">
+                    <a href="./pages/pilz.html" class="nav-link h2">Pilz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/bergbau.html" class="nav-link h2">Bergbau</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/berg.html" class="nav-link h2">Berg</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/kristall.html" class="nav-link h2">Kristall</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/wald.html" class="nav-link h2">Wald</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+
             <h2>Beschreibung vom Wald</h2>
-        </article>
-        
+        </div>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
     </main>
 </body>
 

@@ -2,18 +2,75 @@
 <html lang="de">
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
+
+    <title>Wald</title>
+
+    <link href="../style/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../style/style.css" rel="stylesheet">
+
+    <script src="../style/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-<h1>
-    Wald
-</h1>
+    <main class="container">
 
-<img src="../images/IMG_5022.jpg" width="25%" height="25%"/>
-<br/>
-<button>
-    <a href="../index.html">return</a>
-</button>
+        <header>
+            <h1>
+                <a href="../index.html">Thüringer Wald</a>
+            </h1>
+        </header>
+
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 350px;">
+                <div class="carousel-item active">
+                    <img src="../images/IMG_4841.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/IMG_4938.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/IMG_4943.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="toc">
+            <ul class="nav nav-fill">
+                <li class="nav-item">
+                    <a href="./pilz.html" class="nav-link h2">Pilz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./bergbau.html" class="nav-link h2">Bergbau</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./berg.html" class="nav-link h2">Berg</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./kristall.html" class="nav-link h2">Kristall</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./wald.html" class="nav-link h2">Wald</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="../images/IMG_5022.jpg" width="25%" height="25%" />
+
+        </div>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </main>
 </body>
+
 </html>
