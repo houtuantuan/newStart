@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Artikel</title>
+
+    <link href="../../style/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../style/style.css" rel="stylesheet">
+
+    <script src="../../style/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function addItemToList(id, name, price) {
+            var amount = document.getElementById(id).value;
+            sessionStorage.setItem(name, price * amount);
+            window.alert("Der Artikel wird hinzugefügt.");
+        }
+    </script>
+</head>
+
+<body>
+    <main class="container">
+
+        <header>
+            <h1>
+                <a href="../../index.html">Thüringer Wald</a>
+            </h1>
+        </header>
+
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="../../images/" alt="Champignon Braun">
+                <div class="card-body">
+                    <h5 class="card-title">Champignon Braun</h5>
+                    <p class="card-text">1€ / kg</p>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="input-group input-group-sm mb-3">
+                                <input id="champignonBraun" type="text" class="form-control" placeholder="Menge (kg)"
+                                    aria-label="Menge" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="addItemToList('champignonBraun','Champignon Braun',1)">In den
+                                        Warenkorb</button>
+                                </div>
+                                <small class="text-muted">Bitte Punkt(1.23) statt Komma(1,23) benutzen.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../../images/" alt="Enoki-Pilz">
+                <div class="card-body">
+                    <h5 class="card-title">Enoki-Pilz</h5>
+                    <p class="card-text">10€ / kg</p>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="input-group input-group-sm mb-3">
+                                <input id="enokiPilz" type="text" class="form-control" placeholder="Menge (kg)"
+                                    aria-label="Menge" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="addItemToList('enokiPilz','Enoki-Pilz',10)">In den Warenkorb</button>
+                                </div>
+                                <small class="text-muted">Bitte Punkt(1.23) statt Komma(1,23) benutzen.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../../images/" alt="Austern Pilz">
+                <div class="card-body">
+                    <h5 class="card-title">Austern Pilz</h5>
+                    <p class="card-text">5€ / kg</p>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="input-group input-group-sm mb-3">
+                                <input id="austernPilz" type="text" class="form-control" placeholder="Menge (kg)"
+                                    aria-label="Menge" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-outline-primary"
+                                        onclick="addItemToList('austernPilz','Austern Pilz',5)">In den
+                                        Warenkorb</button>
+                                </div>
+                                <small class="text-muted">Bitte Punkt(1.23) statt Komma(1,23) benutzen.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="./warenkorb.html" role="button" class="btn btn-success btn-lg">Zu den Warenkorb</a>
+        </div>
+
+    </main>
+</body>
+
+</html>

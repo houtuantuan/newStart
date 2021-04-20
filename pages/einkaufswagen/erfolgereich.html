@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Personal Informationen</title>
+
+    <link href="../../style/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../style/style.css" rel="stylesheet">
+
+    <script src="../../style/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        function fillThePage() {
+
+            var address = sessionStorage.getItem("firstname") + " " + sessionStorage.getItem("lastname") + ", " +
+                sessionStorage.getItem("address") + ", " + sessionStorage.getItem("zip") + ", " + sessionStorage.getItem("city");
+
+            var total = sessionStorage.getItem("total")
+
+            document.getElementById("lieferadresse").appendChild(document.createElement("p")).append(address);
+            document.getElementById("rechnungsadresse").appendChild(document.createElement("p")).append(address);
+            document.getElementById("summe").appendChild(document.createElement("p")).append(total);
+        }
+    </script>
+</head>
+
+<body onload="fillThePage()">
+    <main class="container">
+
+        <header>
+            <h1>
+                <a href="../../index.html">Thüringer Wald</a>
+            </h1>
+        </header>
+
+        <h1>Vielen Dank für Ihre Bestellung!</h1>
+        <h2>Hier sind die Zusammenfassung:</h2>
+        <ul>
+            <li id="lieferadresse">
+                <h4>Lieferadresse</h4>
+            </li>
+            <li id="rechnungsadresse">
+                <h4>Rechnungsadresse</h4>
+            </li>
+            <li id="summe">
+                <h4>Gesamtsumme</h4>
+            </li>
+        </ul>
+
+        <div class="text-end">
+            <a href="../../index.html" role="button" class="btn btn-success">Zur Startseite</a>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Personal Informationen</title>
+
+    <link href="../../style/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../style/style.css" rel="stylesheet">
+
+    <script src="../../style/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function summarize() {
+            var zip = document.getElementById("zip").value;
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            var address = document.getElementById("address").value;
+            var city = document.getElementById("city").value;
+            var zip = document.getElementById("zip").value;
+
+            if (!firstname || firstname === ""){
+                firstname="Muster";
+            }
+
+            if (!lastname || lastname === ""){
+                lastname="Max";
+            }
+            
+            if (!address || address === ""){
+                address="Hauptstrasse 1";
+            }
+
+            if (!city || city === ""){
+                city="Berlin";
+            }
+
+            if (!zip || zip === ""){
+                zip="12345";
+            }
+
+            sessionStorage.setItem("firstname",firstname);
+            sessionStorage.setItem("lastname",lastname);
+            sessionStorage.setItem("address",address);
+            sessionStorage.setItem("city",city);
+            sessionStorage.setItem("zip",zip);
+        }
+
+    </script>
+</head>
+
+<body>
+    <main class="container">
+
+        <header>
+            <h1>
+                <a href="../../index.html">Thüringer Wald</a>
+            </h1>
+        </header>
+
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="firstname" class="form-label">Vorname</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Muster">
+            </div>
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Nachname</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Max">
+            </div>
+            <div class="col-md-7">
+                <label for="address" class="form-label">Adresse</label>
+                <input type="text" class="form-control" id="address" placeholder="Hauptstrasse 1">
+            </div>
+
+            <div class="col-md-3">
+                <label for="city" class="form-label">Stadt</label>
+                <input type="text" class="form-control" id="city" placeholder="Berlin">
+            </div>
+            <div class="col-md-2">
+                <label for="zip" class="form-label">PLZ</label>
+                <input type="text" class="form-control" id="zip" placeholder="12345">
+            </div>
+
+            <div class="col-3">
+                <a href="./warenkorb.html" role="button" class="btn btn-danger">Zurück</a>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-3 text-end">
+                <a href="./erfolgereich.html" role="button" class="btn btn-success" onclick="summarize()">Bestätigen</a>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
