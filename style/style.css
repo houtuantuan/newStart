@@ -19,7 +19,7 @@ header a {
     text-decoration: none;
 }
 
-#toc a {
+#tableOfContent a {
     text-align: center;
     width: 100%;
     padding: 25px 25px 25px 25px;
@@ -28,7 +28,7 @@ header a {
     font-weight: 100;
 }
 
-#toc {
+#tableOfContent {
     padding-top: 10px;
 }
 
