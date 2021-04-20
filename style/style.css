@@ -1,9 +1,3 @@
-aside {
-    width: 15%;
-    float: left;
-    padding: 0px 5% 0px 5%;
-}
-
 header, footer {
     font-size: 60px;
     background-color: darkslategray;
@@ -30,13 +24,4 @@ header a {
 
 #tableOfContent {
     padding-top: 10px;
-}
-
-#beschreibung {
-    padding: 0px 0px 0px 25%;
-}
-
-#image img {
-    width: 100%;
-    display: inline-block;
 }
